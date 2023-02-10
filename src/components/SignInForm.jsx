@@ -5,11 +5,9 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./css/SignInForm.css";
 
-
 const SignInFormComponent = ({ values, errors, touched, status }) => {
   const [data, setData] = useState([]);
   const history = useNavigate();
-
 
   useEffect(() => {
     // console.log("new state aquired", status);
@@ -46,6 +44,7 @@ const SignInFormComponent = ({ values, errors, touched, status }) => {
             type="text"
             name="username"
             placeholder="Username"
+            required
           />
         </label>
         {touched.name && errors.name && <p className="errors">{errors.name}</p>}
@@ -54,8 +53,8 @@ const SignInFormComponent = ({ values, errors, touched, status }) => {
         <label htmlFor="state">
           State
           <br></br>
-          <Field as="select" name="state" id="state">
-            <option value="null"></option>
+          <Field as="select" required name="state" id="state">
+            <option value=""></option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
@@ -114,7 +113,13 @@ const SignInFormComponent = ({ values, errors, touched, status }) => {
         <label htmlFor="email">
           Email
           <br></br>
-          <Field id="email" type="text" name="email" placeholder="Email" />
+          <Field
+            id="email"
+            type="email"
+            required
+            name="email"
+            placeholder="Email"
+          />
         </label>
         {touched.email && errors.email && (
           <p className="errors">{errors.email}</p>
@@ -128,6 +133,9 @@ const SignInFormComponent = ({ values, errors, touched, status }) => {
           <Field
             id="password"
             type="text"
+            required
+            minlength='8'
+            maxlength='16'
             name="password"
             placeholder="Password"
           />
@@ -138,7 +146,9 @@ const SignInFormComponent = ({ values, errors, touched, status }) => {
 
         <br></br>
 
-        <button className="submitButton" type="submit">Submit</button>
+        <button className="submitButton" type="submit">
+          Submit
+        </button>
       </Form>
 
       {data.map((piece) => {
@@ -169,7 +179,10 @@ const FormikForm = withFormik({
   validationSchema: Yup.object().shape({
     username: Yup.string().required(),
     email: Yup.string().required("EMAIL IS REQUIRED"),
-    password: Yup.string().min(8).max(16).required("PASSWORD MAY NOT BE LEFT BLANK"),
+    password: Yup.string()
+      .min(8)
+      .max(16)
+      .required("PASSWORD MAY NOT BE LEFT BLANK"),
   }),
 
   handleSubmit(values, { setStatus, resetForm }) {
