@@ -15,7 +15,24 @@
         max-width: 80%;
         background-color: #EDEDE9;
       }
-      p {
-        font-weight: bolder;
+      h3 {
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+      h2 {
+        font-weight: bold;
+        padding-top: 4px ;
+        padding-bottom: 4px ;
+      }
+      section>h2,
+      section>p
+      {
+        display: flex;
+        text-align: center;
+        justify-content: center ;
+        /* color:red */
+      }
+      section>p{
+        padding-bottom: 16px;
       }
   }

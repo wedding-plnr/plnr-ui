@@ -7,10 +7,22 @@ function About() {
     <div className="AboutUsBlock">
         <h3>About Us</h3>
         <div className="infoBlock">
-          <h2 className="OurMission">
-            <p>OUR MISSSION</p>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vero rem pariatur ab. Quaerat nostrum itaque optio minus iure possimus tempora rerum cumque adipisci minima?</div>
-          </h2>
+          <section className="WhoRwe">
+            <h2>WHO ARE WE</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iusto itaque asperiores vero quibusdam iure porro nam sed omnis voluptates?</p>
+          </section>
+          <section className="OurMission">
+            <h2>OUR MISSSION</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iusto itaque asperiores vero quibusdam iure porro nam sed omnis voluptates?</p>
+        </section>
+        <section className="Features">
+            <h2>FEATURES</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iusto itaque asperiores vero quibusdam iure porro nam sed omnis voluptates?</p>
+        </section>
+        <section className="Packs">
+            <h2>PACKAGES</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iusto itaque asperiores vero quibusdam iure porro nam sed omnis voluptates?</p>
+          </section>
         </div>
     </div>
   );
