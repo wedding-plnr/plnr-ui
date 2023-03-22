@@ -14,21 +14,21 @@ function Footer() {
                 </div>
                 <section className="links">
                     <div className="leftLinkCol">
-                        <h3 className="LinkTitle1">LINK</h3>
+                        <h2 className="LinkTitle1">LINK</h2>
                         <a href="https://www.google.com/">Link 1</a>
                         <a href="https://www.google.com/">Link 2</a>
                         <a href="https://www.google.com/">Link 3</a>
-                        <h3 className="LinkTitle2">LINK</h3>
+                        <h2 className="LinkTitle2">LINK</h2>
                         <a href="https://www.google.com/">Link 1</a>
                         <a href="https://www.google.com/">Link 2</a>
                         <a href="https://www.google.com/">Link 3</a>
                     </div>
                     <div className="rightLinkCol">
-                    <h3 className="LinkTitle1">LINK</h3>
+                    <h2 className="LinkTitle1">LINK</h2>
                         <a href="https://www.google.com/">Link 1</a>
                         <a href="https://www.google.com/">Link 2</a>
                         <a href="https://www.google.com/">Link 3</a>
-                        <h3 className="LinkTitle2">LINK</h3>
+                        <h2 className="LinkTitle2">LINK</h2>
                         <a href="https://www.google.com/">Link 1</a>
                         <a href="https://www.google.com/">Link 2</a>
                         <a href="https://www.google.com/">Link 3</a>
