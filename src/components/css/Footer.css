@@ -1,0 +1,21 @@
+@media screen and (min-width: 400px) {
+    .FooterBox {
+        background-color: #242222;
+    }
+    .socials, .links , .leftLinkCol , .rightLinkCol {
+        display: flex;
+    }
+    .socials {
+        justify-content: space-around;
+        padding: 12px 10% 12px 10%;
+    }
+    .links {
+        justify-content: space-around;
+    }
+    .leftLinkCol, .rightLinkCol, a {
+        flex-direction: column;
+        color: white;
+        text-decoration: none;
+    }
+
+}
