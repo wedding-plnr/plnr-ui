@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./components/Nav";
+import Footer from "./components/Footer";
 import "./components/css/App.css";
 import Home from "./components/pages/Home";
 import SignUpForm from "./components/pages/SignUp";
@@ -16,6 +17,7 @@ function App() {
           <Route path='/sign-up' element={<SignUpForm/>} />
           <Route path='/login' element={<LogInForm/>} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );
