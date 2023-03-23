@@ -6,11 +6,11 @@ function Footer() {
         <>
             <div className="FooterBox">
                 <div className="socials">
-                    <a href="https://www.facebook.com/login/" role="button" className="facebook"> <img src="../../public/imgs/sm-icons-facebook-logo.png" alt="face"></img></a>
-                    <a href="https://twitter.com/login/" role="button" className="twitter"><img src="../../public/imgs/sm-icons-twitter-social-icon-circle-color.png" alt="twit" /></a>
-                    <a href="https://www.github.com/login/" role="button" className="github"><img src="../../public/imgs/GitHub-Mark.png" alt="git" /></a>
-                    <a href="https://www.instagram.com/login/" role="button" className="instagram"><img src="../../public/imgs/insta-logo-icon.png" alt="insta" /></a>
-                    <a href="https://www.linkedin.com/login/" role="button" className="linkedIn"><img src="../../public/imgs/linkedIN.png" alt="lIn" /></a>
+                    <a href="https://www.facebook.com/login/" role="button" className="facebook"> <img src="../imgs/sm-icons-facebook-logo.png" alt="face"></img></a>
+                    <a href="https://twitter.com/login/" role="button" className="twitter"><img src="../imgs/sm-icons-twitter-social-icon-circle-color.png" alt="twit" /></a>
+                    <a href="https://www.github.com/login/" role="button" className="github"><img src="../imgs/GitHub-Mark.png" alt="git" /></a>
+                    <a href="https://www.instagram.com/login/" role="button" className="instagram"><img src="../imgs/insta-logo-icon.png" alt="insta" /></a>
+                    <a href="https://www.linkedin.com/login/" role="button" className="linkedIn"><img src="../imgs/linkedIN.png" alt="lIn" /></a>
                 </div>
                 <section className="links">
                     <div className="leftLinkCol">
