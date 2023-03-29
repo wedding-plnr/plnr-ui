@@ -1,14 +1,10 @@
 import React from "react";
+import Discovery from "../Discovery";
 
 function Discover() {
     return (
         <>
-            <div className="discoverPage">
-                <div className="cPostBtnContainer">
-                    <button className="">createPostBtn</button>
-                </div>
-                <section className=""></section>
-            </div>
+            <Discovery/>
         </>
     )
 }
