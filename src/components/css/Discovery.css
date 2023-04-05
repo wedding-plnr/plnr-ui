@@ -17,21 +17,25 @@
         flex-direction: column-reverse;
     }
 
-    .cPostBtnContainer{
-        background-color: red;
-    }
-
     .postGridContainer{
         color: black;
-        background-color: aqua;
+
     }
     .row1,.row2 {
         display: flex;
         justify-content: space-around;
-
+        max-width: 75%;
+        padding: 16px 0px 0px 0px;
+    }
+    .row2 {
+        padding-bottom: 16px;
     }
     .col1,.col2,.col3 {
         border: black 2px solid;
+        min-width: 280px;
+        min-height: 250px;
+        border-radius: 4%;
+
     }
 }
 
@@ -39,4 +43,13 @@
     .discoverPage {
         flex-direction: column;
     }
+    .cPostBtnContainer{
+        flex-direction: row-reverse;
+        padding:16px 10% 16px 0px;
+    }
+    .createPostBtn {
+        max-width: 80px;
+        border-radius: 10%;
+    }
+
 }
