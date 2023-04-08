@@ -18,8 +18,5 @@ input {
 }
 h1 {
   justify-content: flex-start;
-}
-
-button {
-  width: 20%;
+  padding: 0px 0px 0px 28px;
 }

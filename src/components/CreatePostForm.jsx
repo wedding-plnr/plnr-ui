@@ -73,9 +73,8 @@ const CreatePostForm = ({ values, errors, touched, status }) => {
         {touched.label3 && errors.label3 && (
           <p className="errors">{errors.label3}</p>
         )}
-
-        <h1>Vendor List</h1>
-        <button className="submitButton">Login</button>
+      <h1>Vendor List</h1>
+      <button className="submitButton">Post</button>
       </Form>
 
       {data.map((piece) => {

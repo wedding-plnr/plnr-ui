@@ -1,0 +1,10 @@
+.vendorList {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 70px;
+    height: 80px;
+    width: 50%;
+}

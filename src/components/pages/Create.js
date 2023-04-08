@@ -1,17 +1,19 @@
 import React from "react";
-import CreatePostForm from '../CreatePostForm'
+import CreatePostForm from "../CreatePostForm";
+import VendorList from "../VendorList";
 import { MDBCard, MDBCardBody } from "mdb-react-ui-kit";
 
 function Create() {
-    return (
-        <>
-            <MDBCard>
-                <MDBCardBody>
-                    <CreatePostForm />
-                </MDBCardBody>
-            </MDBCard>
-        </>
-    )
+  return (
+    <>
+      <MDBCard>
+        <MDBCardBody>
+          <CreatePostForm />
+          <VendorList />
+        </MDBCardBody>
+      </MDBCard>
+    </>
+  );
 }
 
 export default Create;
