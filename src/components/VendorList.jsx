@@ -46,8 +46,8 @@ class VendorList extends Component {
             ></input>
             <button type="submit">add</button>
           </form>
-        </div>
         <VendorItems entries={this.state.items} />
+        </div>
       </div>
     );
   }
