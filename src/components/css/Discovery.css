@@ -1,83 +1,87 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'PT Sans', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+}
+
+@media screen and (min-width: 380px) {
+  .discoverPage > * {
+    display: flex;
+    flex-direction: column;
+  }
+  .discoverPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+  }
+  .cPostBtnContainer {
+    padding-top: 20px;
+    min-width: 70%;
   }
 
+  .createPostBtn {
+    min-height: 60px;
+    background-color: #242222;
+    color: white;
+    font-family: "Karla", sans-serif;
+    font-size: x-large;
+    /* border-radius: 5%; */
+  }
 
-  @media screen and (min-width: 380px) {
-    .discoverPage > *{
-        display: flex;
-        flex-direction: column;
-    }
-    .discoverPage {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* background-color: red; */
-    }
-    .cPostBtnContainer {
-        padding-top: 20px;
-        min-width: 70%;
-    }
-
-    .createPostBtn {
-        min-height: 60px;
-        background-color:#242222;
-        color: white;
-        font-family:'Karla', sans-serif;
-        font-size: x-large;
-        /* border-radius: 5%; */
-    }
-
-    .postGridContainer{
-        color: black;
-        flex-direction: column;
-        align-items: center;
-        min-width:70%;
-    }
-    .row1,.row2 {
-        display: flex;
-        flex-direction: column;
-        min-width: 100%;
-    }
-    .row2 {
-        padding-bottom: 16px;
-    }
-    .col1,.col2,.col3 {
-        min-height: 250px;
-        border: solid black 2px;
-        margin-top: 20px;
-        border-radius: 8px;
-    }
+  .postGridContainer {
+    color: black;
+    flex-direction: column;
+    align-items: center;
+    min-width: 70%;
+  }
+  .row1,
+  .row2 {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+  .row2 {
+    padding-bottom: 16px;
+  }
+  .col1,
+  .col2,
+  .col3 {
+    min-height: 250px;
+    border: solid black 2px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
 }
 
 @media screen and (min-width: 800px) {
-    .discoverPage {
-        flex-direction: column;
-    }
-    .cPostBtnContainer{
-        align-items: end;
-        width: 100%;
-
-    }
-    .createPostBtn {
-        padding: 8px;
-        margin-bottom: 20px;
-        margin-right: 10%;
-        border-radius: 8px;
-    }
-    .row1,.row2 {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .col1,.col2,.col3 {
-        min-width: 30%;
-        margin-top: 0px;
-        /* margin: 12px 0px 12px 0px; */
-    }
-    .row2 {
-        padding:20px 0px 60px 0px;
-    }
+  .discoverPage {
+    flex-direction: column;
+  }
+  .cPostBtnContainer {
+    align-items: end;
+    width: 100%;
+  }
+  .createPostBtn {
+    padding: 8px;
+    margin-bottom: 20px;
+    margin-right: 10%;
+    border-radius: 8px;
+  }
+  .row1,
+  .row2 {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .col1,
+  .col2,
+  .col3 {
+    min-width: 30%;
+    margin-top: 0px;
+    /* margin: 12px 0px 12px 0px; */
+  }
+  .row2 {
+    padding: 20px 0px 60px 0px;
+  }
 }
