@@ -1,0 +1,16 @@
+.form-div {
+    /* background-color: aqua; */
+    width: 100%;
+    margin-top: 40px;
+}
+Form {
+    /* background-color: red; */
+
+}
+
+label,#label1,#label2,#label3 {
+    margin-left: 40px;
+}
+Field {
+    border: soild black 2px;
+}
