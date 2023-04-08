@@ -1,4 +1,5 @@
 import React from "react";
+import Create from "./CreatePostButton";
 import './css/Discovery.css'
 
 function Discovery() {
@@ -6,7 +7,7 @@ function Discovery() {
         <>
             <div className="discoverPage">
                 <div className="cPostBtnContainer">
-                    <button className="createPostBtn">Create New Post</button>
+                    <Create/>
                 </div>
                 <section className="postGridContainer">
                     <div className="row1">
