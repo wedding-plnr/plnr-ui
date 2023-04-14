@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import FlipMove from 'react-flip-move';
 
 class VendorItems extends Component {
   constructor(props) {

@@ -4,6 +4,7 @@ import * as Yup from "yup";
 import axios from "axios";
 import "./css/CreatePost.css";
 import { useNavigate } from "react-router-dom";
+import VendorList from "./VendorList";
 
 const CreatePostForm = ({ values, errors, touched, status }) => {
   const [data, setData] = useState([]);
@@ -73,7 +74,8 @@ const CreatePostForm = ({ values, errors, touched, status }) => {
         {touched.label3 && errors.label3 && (
           <p className="errors">{errors.label3}</p>
         )}
-      <h1>Vendor List</h1>
+        <h1>Vendor List</h1>
+        <VendorList />
       </Form>
 
       {data.map((piece) => {

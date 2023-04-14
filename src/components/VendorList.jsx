@@ -15,7 +15,7 @@ class VendorList extends Component {
   }
 
   addItem(e) {
-    var itemArray = this.state.items;
+    let itemArray = this.state.items;
 
     if (this._inputElement.value !== "") {
       itemArray.unshift({
@@ -34,7 +34,7 @@ class VendorList extends Component {
   }
 
   deleteItem(key) {
-    var filteredItems = this.state.items.filter(function (item) {
+    let filteredItems = this.state.items.filter(function (item) {
       return item.key !== key;
     });
 
@@ -46,7 +46,7 @@ class VendorList extends Component {
   render() {
     return (
       <div className="vendorListMain">
-          <form onSubmit={this.addItem}>
+          <form onClick={this.addItem}>
             <input
               ref={(a) => (this._inputElement = a)}
               placeholder="enter task"
