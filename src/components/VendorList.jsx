@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import VendorItems from "./VendorItems";
-import './css/VendorsList.css'
+import "./css/VendorsList.css";
 
 class VendorList extends Component {
   constructor(props) {
@@ -46,13 +46,15 @@ class VendorList extends Component {
   render() {
     return (
       <div className="vendorListMain">
-          <form onClick={this.addItem}>
-            <input
-              ref={(a) => (this._inputElement = a)}
-              placeholder="enter task"
-            ></input>
-            <button type="submit">add</button>
-          </form>
+        <div className="vendList">
+          <input
+            ref={(a) => (this._inputElement = a)}
+            placeholder="enter task"
+          ></input>
+          <button type="button" onClick={this.addItem} >
+            add
+          </button>
+        </div>
         <VendorItems entries={this.state.items} delete={this.deleteItem} />
       </div>
     );

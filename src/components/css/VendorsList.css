@@ -5,19 +5,20 @@
   font-family: "PT Sans", sans-serif;
 }
 @media screen and (min-width: 380px) {
-  form.vendorListMain {
+  .vendList {
     display: flex;
     flex-direction: row;
+    background-color: aqua;
+    width: 100%;
   }
-  .vendorListMain{
+  .vendorListMain {
     background-color: red;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-right: 70px;
-    height: 80px;
+    max-height: 80px;
     width: 50%;
   }
-
 }

@@ -18,7 +18,7 @@ const CreatePostForm = ({ values, errors, touched, status }) => {
     e.preventDefault();
     const userData = values;
 
-    //   console.log(userData); // for testing input fields
+    console.log(userData); // for testing input fields
 
     fetch("https://reqres.in/api/users", {
       method: "POST",
@@ -76,10 +76,14 @@ const CreatePostForm = ({ values, errors, touched, status }) => {
         )}
         <h1>Vendor List</h1>
         <VendorList />
+        <button className="submitButton" type="submit">
+          Submit
+        </button>
       </Form>
 
       {data.map((piece) => {
         console.log("this is data", data);
+
         return (
           <ul key={piece.id}>
             <li>Label1: {piece.label1}</li>
